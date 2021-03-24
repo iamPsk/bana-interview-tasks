@@ -1,23 +1,27 @@
+
  [![bana logo](http://bana.vision/assets/img/bana1.png "bana logo")](http://bana.vision/assets/img/bana1.png "bana logo")
  #Developer Assessment
-Create a webapp to create train schedules , your app should be able to do crud operations (create,read ,update,delete) use** Laravel framework** as your backend for the frontend you can choose between any of the three
-- vue js
-- angular
-- react
+Create a webapp to create train schedules , your app should be able to do crud operations (create,read ,update,delete) use** Laravel framework** as your backend for the frontend you 
 you can use your own styling in addition to bootstrap
 ### App features
  ####Frontend
 - must have landing page 
 - no authentication is neccessary for the users of the app 
 - your app should have a view with a table that displays the current route schedules and should give you options of updating them
+- can choose between any of the three frontend frameworks
+> vue js
+> angular
+ react
 -  each train schedule post should require the following fields :
 > route
 > departure and arrival times
 ticket prices
 
 #### Backend
+- use laravel framework
+- use any database schema of your choice
 
-you can use the following routes in your app
+#####you can use the following train routes in your app
 - Park
 - Rosebank
 - Sandton
