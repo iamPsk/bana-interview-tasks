@@ -1,6 +1,6 @@
  [![bana logo](http://bana.vision/assets/img/bana1.png "bana logo")](http://bana.vision/assets/img/bana1.png "bana logo")
 # Developer Assessment
-Create a webapp to create train schedules , your app should be able to do crud operations (create,read ,update,delete) use** Laravel framework** as your backend for the frontend you 
+Create a webapp to create train schedules , your app should be able to do crud operations (create,read ,update,delete) use  **Laravel framework** as your backend for the frontend you 
 you can use your own styling in addition to bootstrap
 ### App features
 ####  Frontend
