@@ -1,27 +1,47 @@
-# TrainSchedule
+ [![bana logo](http://bana.vision/assets/img/bana1.png "bana logo")](http://bana.vision/assets/img/bana1.png "bana logo")
+# Developer Assessment
+Create a webapp to create train schedules , your app should be able to do crud operations (create,read ,update,delete) use  **Laravel framework** as your backend for the frontend you 
+you can use your own styling in addition to bootstrap
+### App features
+####  Frontend
+- must have landing page 
+- must have a header with a link to page for creating , reading and updating schedules
+- no authentication is neccessary for the users of the app 
+- your app should have a view with a table that displays the current route schedules and should give you options of updating them
+- can choose between any of the three frontend frameworks
+> vue js
+> angular
+>  react
+-  each train schedule post should require the following fields :
+> route
+> departure and arrival times
+ticket prices
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+#### Backend
+- use laravel framework
+- use any database schema of your choice
 
-## Development server
+##### you can use the following train routes in your app
+- Park
+- Rosebank
+- Sandton
+- Marlboro
+- Midrand
+- Centurion
+- Pretoria
+- Hatfield
+- Rhodesfield
+- OR Tambo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### What we will be checking for
 
-## Code scaffolding
+------------
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Knowledge and understanding of git version control
+- Knowledge and understanding of laravel framework and php
+- Knowledge and understandig of frontend javascript frameworks
+- Knowledge and understanding of frontend state management
+- Well organized and documented code
+- General aesthetic and UX
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+fork the repository [interview task](https://github.com/kagebond/bana-interview-tasks.git "interview task") from github and send a link when you have complete it to kage@bana.vision
