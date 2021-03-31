@@ -5,7 +5,7 @@
         [containerInside]="false">
 
         <mdb-navbar-brand>
-            <a class="navbar-brand active" href="#">
+            <a [routerLink]="[ '/' ]" routerLinkActive="active" class="navbar-brand" href="#">
                 Home<span class="sr-only">(current)</span></a>
         </mdb-navbar-brand>
 
@@ -15,7 +15,7 @@
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link waves-light" mdbWavesEffect>Schedules</a>
+                    <a [routerLink]="[ '/schedules' ]" routerLinkActive="active" class="nav-link waves-light" mdbWavesEffect>Schedules</a>
                 </li>
             </ul>
             <!-- Links -->
@@ -58,13 +58,12 @@
         <div class="full-bg-img">
             <div class="mask hm-gradient rgba-purple-light flex-center">
                 <div class="container text-center white-text wow fadeInUp">
-                    <h2>This Navbar is fixed and transparent</h2>
+                    <h2>Welcome aboard the Soul Train</h2>
                     <br>
-                    <h5>It will always stay visible on the top, even when you scroll down</h5>
-                    <p>Navbar's background will switch from transparent to solid color while scrolling down</p>
+                    <h5>Your unforgettable experience is about to begin…</h5>
+                    <p>We offers dedicated safe long distance passenger train travel services in South Africa</p>
                     <br>
-                    <p>Full page intro with background image will be always displayed in full screen mode, regardless of
-                        device </p>
+                    <p>Simply complete the booking form and we will reply via Email with a quotation, confirming travel dates, timetable and fares.</p>
                 </div>
             </div>
         </div>
@@ -72,46 +71,3 @@
     <!-- /.Main -->
 </header>
 <!--Main Navigation-->
-
-
-<!-- Navbar-->
-<!-- <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color" [containerInside]="false"> -->
-
-<!-- Navbar brand -->
-
-<!-- Collapsible content -->
-<!-- <links> -->
-
-
-<!--   
-      <ul class="navbar-nav ml-auto ">
-        <li class="nav-item">
-          <a class="nav-link">
-            <mdb-icon fab icon="twitter"></mdb-icon>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">
-            <mdb-icon fab icon="google-plus"></mdb-icon>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">
-            <div class="btn-group" mdbDropdown>
-              <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
-              <div class="dropdown-menu dropdown-menu-right dropdown-primary">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="divider dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              </div>
-            </div>
-          </a>
-        </li>
-      </ul> -->
-<!-- </links> -->
-<!-- Collapsible content -->
-
-<!-- </mdb-navbar> -->
-<!--/.Navbar -->
