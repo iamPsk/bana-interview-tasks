@@ -1,18 +1,28 @@
-<header class="h-100">    
+<header class="h-100">
     <!--Navbar-->
-    <mdb-navbar SideClass="navbar navbar-expand-sm intro-fixed-nav navbar-dark scrolling-navbar fixed-top transparent z-depth-0"
+    <mdb-navbar
+        SideClass="navbar navbar-expand-sm intro-fixed-nav navbar-dark scrolling-navbar fixed-top transparent z-depth-0"
         [containerInside]="false">
 
         <mdb-navbar-brand>
-            <a class="navbar-brand" href="#">
-                Home</a>
+            <a class="navbar-brand active" href="#">
+                Home<span class="sr-only">(current)</span></a>
         </mdb-navbar-brand>
 
         <!-- Collapsible content -->
         <links>
 
             <!-- Links -->
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbWavesEffect>Schedules</a>
+                </li>
+            </ul>
+            <!-- Links -->
+
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+
                 <li class="nav-item">
                     <a class="nav-link" href="#">
                         <mdb-icon fab icon="pinterest-p"></mdb-icon>
@@ -34,18 +44,6 @@
                     </a>
                 </li>
 
-                <!-- Dropdown -->
-                <li class="nav-item dropdown" dropdown>
-                    <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light"
-                        mdbWavesEffect>
-                        <mdb-icon fas icon="user"></mdb-icon>
-                        <span class="caret"></span>
-                    </a>
-                    <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary dropdowm-menu-right" role="menu">
-                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Schedules</a>
-                    </div>
-                </li>
-
             </ul>
             <!-- Links -->
 
@@ -54,6 +52,7 @@
 
     </mdb-navbar>
     <!--/.Navbar-->
+
     <!-- Main -->
     <div class="view intro-2">
         <div class="full-bg-img">
@@ -73,3 +72,46 @@
     <!-- /.Main -->
 </header>
 <!--Main Navigation-->
+
+
+<!-- Navbar-->
+<!-- <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color" [containerInside]="false"> -->
+
+<!-- Navbar brand -->
+
+<!-- Collapsible content -->
+<!-- <links> -->
+
+
+<!--   
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item">
+          <a class="nav-link">
+            <mdb-icon fab icon="twitter"></mdb-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <mdb-icon fab icon="google-plus"></mdb-icon>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <div class="btn-group" mdbDropdown>
+              <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
+              <div class="dropdown-menu dropdown-menu-right dropdown-primary">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="divider dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul> -->
+<!-- </links> -->
+<!-- Collapsible content -->
+
+<!-- </mdb-navbar> -->
+<!--/.Navbar -->
