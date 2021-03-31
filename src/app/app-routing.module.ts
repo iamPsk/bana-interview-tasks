@@ -7,11 +7,11 @@ import { SchedulesComponent } from './components/schedules/schedules.component';
 const routes: Routes = [
   {
     path: "",
-    redirectTo: "/landing",
+    redirectTo: "/",
     pathMatch: "full"
   },
   {
-    path: "landing",
+    path: "",
     component: LandingComponent
   },
   {
