@@ -1,0 +1,47 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <mdb-card class="text-center">
+      <mdb-card-header>
+        <dl class="row px-3">
+          <dt class="col-sm-1 rounded text-center mb-2 white-text blue p-1 font-weight-bolder ">A</dt>
+          <dd class="col-sm-4 font-weight-bold blue-text">Origin</dd>
+          <dd class="col-sm-7 text-right blue-text">Park Station</dd>
+        
+          <dt class="col-sm-1 font-weight-bolder rounded text-center white-text pink p-1 ">B</dt>
+          <dd class="col-sm-4 font-weight-bold pink-text">Destination</dd>
+          <dd class="col-sm-7 text-right pink-text">Rosebank Station</dd>
+        
+        </dl>
+      </mdb-card-header>
+      <mdb-card-body class="p-0">
+        <mdb-card-title>
+          <div class="row m-0">
+            <div class="col-md-6 pt-2 white-text blue accent-4">
+              <p>Trip Cost <span class="fa-5x d-block">R 48</span></p>
+            </div>
+            <div class="col-md-6 pt-2">
+              <p>Train leaving in</p>
+              <p class="fa-4x">9 </p>
+              <p>Minutes</p>
+            </div>
+          </div>
+        </mdb-card-title>
+  
+        <table mdbTable striped="true">
+          <thead>
+            <tr>
+              <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr mdbTableCol *ngFor="let el of elements">
+              <th scope="row">{{el.id}}</th>
+              <td>{{el.first}}</td>
+              <td>{{el.last}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </mdb-card-body>
+    </mdb-card>
+  </div>
+</div>
