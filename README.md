@@ -23,7 +23,7 @@ you can use your own styling in addition to bootstrap
 
 > route
 > departure and arrival times
-ticket prices
+> ticket prices
 
 #### Backend
 
