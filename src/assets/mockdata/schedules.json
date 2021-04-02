@@ -1,0 +1,130 @@
+[
+    {
+        "id": 0,
+        "origin": "Park Station",
+        "destination": "Rosebank",
+        "note": "Rosebank to Sandton is 22 Km or 51 miles",
+        "img": "../imgs/Metrorail_Gauteng.png",
+        "price": "48",
+        "depature": "19:20",
+        "scheduleTimes": [
+            {
+                "origin": "10:50",
+                "destination": "11:09",
+                "cost": "48"
+            },
+            {
+                "origin": "11:29",
+                "destination": "11:50",
+                "cost": "48"
+            },
+            {
+                "origin": "12:09",
+                "destination": "12:20",
+                "cost": "48"
+            },
+            {
+                "origin": "12:40",
+                "destination": "12:59",
+                "cost": "48"
+            }
+        ],
+        "news": "Johannesburg Park Station itself has security and is well-patrolled & secure. Be very careful if you walk outside the station. It's recommended that you either use the safe new Gautrain network to travel between Jo'burg Park Station, Sandton and Pretoria, or that you pre-book a car or taxi to pick you up at Jo'burg station when you arrive, and when leaving again, take a taxi or car to the station entrance."
+    },
+    {
+        "id": 3,
+        "origin": "Park Station",
+        "destination": "Rosebank",
+        "note": "Rosebank to Sandton is 22 Km or 51 miles",
+        "img": "../imgs/Metrorail_Gauteng.png",
+        "price": "48",
+        "depature": "19:20",
+        "scheduleTimes": [
+            {
+                "origin": "10:50",
+                "destination": "11:09",
+                "cost": "48"
+            },
+            {
+                "origin": "11:29",
+                "destination": "11:50",
+                "cost": "48"
+            },
+            {
+                "origin": "12:09",
+                "destination": "12:20",
+                "cost": "48"
+            },
+            {
+                "origin": "12:40",
+                "destination": "12:59",
+                "cost": "48"
+            }
+        ],
+        "news": "Johannesburg Park Station itself has security and is well-patrolled & secure. Be very careful if you walk outside the station. It's recommended that you either use the safe new Gautrain network to travel between Jo'burg Park Station, Sandton and Pretoria, or that you pre-book a car or taxi to pick you up at Jo'burg station when you arrive, and when leaving again, take a taxi or car to the station entrance."
+    },
+    {
+        "id": 1,
+        "origin": "Park Station",
+        "destination": "Rosebank",
+        "note": "Rosebank to Sandton is 22 Km or 51 miles",
+        "img": "../imgs/Metrorail_Gauteng.png",
+        "price": "48",
+        "depature": "19:20",
+        "scheduleTimes": [
+            {
+                "origin": "10:50",
+                "destination": "11:09",
+                "cost": "48"
+            },
+            {
+                "origin": "11:29",
+                "destination": "11:50",
+                "cost": "48"
+            },
+            {
+                "origin": "12:09",
+                "destination": "12:20",
+                "cost": "48"
+            },
+            {
+                "origin": "12:40",
+                "destination": "12:59",
+                "cost": "48"
+            }
+        ],
+        "news": "Johannesburg Park Station itself has security and is well-patrolled & secure. Be very careful if you walk outside the station. It's recommended that you either use the safe new Gautrain network to travel between Jo'burg Park Station, Sandton and Pretoria, or that you pre-book a car or taxi to pick you up at Jo'burg station when you arrive, and when leaving again, take a taxi or car to the station entrance."
+    },
+    {
+        "id": 2,
+        "origin": "Park Station",
+        "destination": "Rosebank",
+        "note": "Rosebank to Sandton is 22 Km or 51 miles",
+        "img": "../imgs/Metrorail_Gauteng.png",
+        "price": "48",
+        "depature": "19:20",
+        "scheduleTimes": [
+            {
+                "origin": "10:50",
+                "destination": "11:09",
+                "cost": "48"
+            },
+            {
+                "origin": "11:29",
+                "destination": "11:50",
+                "cost": "48"
+            },
+            {
+                "origin": "12:09",
+                "destination": "12:20",
+                "cost": "48"
+            },
+            {
+                "origin": "12:40",
+                "destination": "12:59",
+                "cost": "48"
+            }
+        ],
+        "news": "Johannesburg Park Station itself has security and is well-patrolled & secure. Be very careful if you walk outside the station. It's recommended that you either use the safe new Gautrain network to travel between Jo'burg Park Station, Sandton and Pretoria, or that you pre-book a car or taxi to pick you up at Jo'burg station when you arrive, and when leaving again, take a taxi or car to the station entrance."
+    }
+]

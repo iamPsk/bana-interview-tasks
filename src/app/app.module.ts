@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { NavComponent } from './components/nav/nav.component';
 import { ScheduleDetailComponent } from './components/schedule-detail/schedule-detail.component';
+import { ScheduleService } from './services/schedule.service';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,14 @@ import { ScheduleDetailComponent } from './components/schedule-detail/schedule-d
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ScheduleService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
