@@ -11,6 +11,16 @@ export class HeaderComponent implements OnInit {
   constructor(public router: Router) { }
 
   ngOnInit(): void {
+    
+    if(this.router.url !== "/"){
+
+      console.log(
+        'changing color'
+      );
+    }
+    
+    console.log(this.router.url);
+    
   }
 
 }

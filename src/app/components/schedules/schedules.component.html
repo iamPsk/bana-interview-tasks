@@ -6,13 +6,13 @@
   
   <div class="container py-3">
     <div class="container">
-      <div class="list-group">
-        <a [routerLink]="['/route', 'park']" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div *ngFor="let schedule of schedules" class="list-group">
+        <a routerLink="/route/{{schedule.id}}" class="list-group-item list-group-item-action flex-column align-items-start">
           <div class="media">
             <div class="media-body">
-              <h5 class="mt-0 font-weight-bold">Park - Rosebank</h5>
-              <p class="pr-3">Johannesburg Park Station itself has security and is well-patrolled & secure.  Be very careful if you walk outside the station.  It's recommended that you either use the safe new Gautrain network to travel between Jo'burg Park Station, Sandton and Pretoria, or that you pre-book a car or taxi to pick you up at Jo'burg station when you arrive, and when leaving again, take a taxi or car to the station entrance.</p>
-              <small>Rosebank to Sandton is 22 Km or 51 miles</small>    
+              <h5 class="mt-0 font-weight-bold">{{ schedule.origin }} - {{ schedule.destination }}</h5>
+              <p class="pr-3">{{ schedule.news }}</p>
+              <small>{{ schedule.note }}</small>    
             </div>
             <div class="view overlay rounded  mt-2 ml-2 z-depth-2 mb-4">
               <img width="320" class="img-fluid align-self-center" src="../../../assets/imgs/park-rose.png" alt="Sample image">
