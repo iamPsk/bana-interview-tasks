@@ -1,6 +1,7 @@
-<header class="h-100">
+<header [class.h-100]="router.url == '/'">
     <!--Navbar-->
     <mdb-navbar
+        [class.blue]="router.url !== '/'"
         SideClass="navbar navbar-expand-sm intro-fixed-nav navbar-dark scrolling-navbar fixed-top transparent z-depth-0"
         [containerInside]="false">
 
@@ -52,22 +53,7 @@
 
     </mdb-navbar>
     <!--/.Navbar-->
-
-    <!-- Main -->
-    <div class="view intro-2">
-        <div class="full-bg-img">
-            <div class="mask hm-gradient rgba-purple-light flex-center">
-                <div class="container text-center white-text wow fadeInUp">
-                    <h2>Welcome aboard the Soul Train</h2>
-                    <br>
-                    <h5>Your unforgettable experience is about to begin…</h5>
-                    <p>We offers dedicated safe long distance passenger train travel services in South Africa</p>
-                    <br>
-                    <p>Simply complete the booking form and we will reply via Email with a quotation, confirming travel dates, timetable and fares.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.Main -->
+    <app-banner *ngIf="router.url == '/'"></app-banner>
+    <!-- <app-landing *ngIf="router.url == ''"></app-landing> -->
 </header>
 <!--Main Navigation-->
