@@ -1,15 +1,15 @@
 <div class="container py-5">
   <div class="row justify-content-center">
-    <mdb-card class="text-center">
+    <mdb-card *ngIf="schedule" class="text-center">
       <mdb-card-header>
         <dl class="row px-3">
           <dt class="col-sm-1 rounded text-center mb-2 white-text blue p-1 font-weight-bolder ">A</dt>
           <dd class="col-sm-4 font-weight-bold blue-text">Origin</dd>
-          <dd class="col-sm-7 text-right blue-text">Park Station</dd>
+          <dd class="col-sm-7 text-right blue-text">{{ schedule.origin }}</dd>
         
           <dt class="col-sm-1 font-weight-bolder rounded text-center white-text pink p-1 ">B</dt>
           <dd class="col-sm-4 font-weight-bold pink-text">Destination</dd>
-          <dd class="col-sm-7 text-right pink-text">Rosebank Station</dd>
+          <dd class="col-sm-7 text-right pink-text">{{ schedule.destination }}</dd>
         
         </dl>
       </mdb-card-header>
@@ -17,7 +17,7 @@
         <mdb-card-title>
           <div class="row m-0">
             <div class="col-md-6 pt-2 white-text blue accent-4">
-              <p>Trip Cost <span class="fa-5x d-block">R 48</span></p>
+              <p>Trip Cost <span class="fa-5x d-block">{{ schedule.price }}</span></p>
             </div>
             <div class="col-md-6 pt-2">
               <p>Train leaving in</p>
@@ -34,10 +34,10 @@
             </tr>
           </thead>
           <tbody>
-            <tr mdbTableCol *ngFor="let el of elements">
-              <th scope="row">{{el.id}}</th>
-              <td>{{el.first}}</td>
-              <td>{{el.last}}</td>
+            <tr mdbTableCol *ngFor="let el of schedule.scheduleTimes">
+              <th scope="row">{{el.origin}}</th>
+              <td>{{el.destination}}</td>
+              <td>{{el.cost}}</td>
             </tr>
           </tbody>
         </table>

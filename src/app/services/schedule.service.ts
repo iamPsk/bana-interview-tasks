@@ -12,15 +12,25 @@ export class ScheduleService {
 
   constructor(private httpClient: HttpClient) { }
 
+
   getSchedules(): Observable<Schedule[]>{
     return this.httpClient.get<Schedule[]>(this.url)
   }
 
-  getSchedule(id): Observable<Schedule>{
-    let schedules;
-
-    this.getSchedules().subscribe(sched => schedules)
+  getSchedule(id){
     
-    return of(schedules.find(schedule => schedule.id === id))
+    console.log(this.getSchedules().subscribe( schedule => schedule.find( schedule => schedule.id === id)));
+    
+    return of(this.getSchedules().subscribe( schedule => schedule.find( schedule => schedule.id === id)))
+    // return of(
+    //   this.getSchedules().subscribe( schedule => schedule.find( schedule => schedule.id === id))
+    // )
+    // let schedules;
+
+    // this.getSchedules().subscribe(sched => schedules = sched)
+    
+    // console.log(schedules);
+    // return of(schedules.find(schedule => schedule.id === id))
+    
   }
 }

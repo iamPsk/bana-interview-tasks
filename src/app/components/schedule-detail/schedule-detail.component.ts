@@ -50,9 +50,11 @@ export class ScheduleDetailComponent implements OnInit {
 
   getSchedule():void{
     const id = +this.route.snapshot.paramMap.get('id');
-    this.scheduleService.getSchedule(id)
-    console.log(this.schedule);
+    this.scheduleService.getSchedules().subscribe( schedules => {
+      this.schedule = schedules.find( schedule => schedule.id === id)
 
+      console.log(this.schedule);
+    })
   }
 
   updateList(id: number, property: string, event: any) {
