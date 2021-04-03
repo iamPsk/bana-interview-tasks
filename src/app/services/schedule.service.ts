@@ -17,20 +17,32 @@ export class ScheduleService {
     return this.httpClient.get<Schedule[]>(this.url)
   }
 
-  getSchedule(id){
-    
-    console.log(this.getSchedules().subscribe( schedule => schedule.find( schedule => schedule.id === id)));
-    
-    return of(this.getSchedules().subscribe( schedule => schedule.find( schedule => schedule.id === id)))
-    // return of(
-    //   this.getSchedules().subscribe( schedule => schedule.find( schedule => schedule.id === id))
-    // )
-    // let schedules;
+  
+  // create, read, update, delete schedule
 
-    // this.getSchedules().subscribe(sched => schedules = sched)
+  createSchedule(schedule: Schedule): void{
+
+  }
+
+  readSchedule(id: number){
     
-    // console.log(schedules);
-    // return of(schedules.find(schedule => schedule.id === id))
+    console.log(this.getSchedules().subscribe( schedule => schedule));
+    
+    return of(this.getSchedules().subscribe( schedule => {return schedule}))
     
   }
+
+  updateSchedule(id: number, schedule: Schedule) {
+
+  }
+
+  deleteSchedule(id: number) {
+
+  }
+
+  // create, read, update, delete schedule
+
+
+  // error handling
+  
 }
