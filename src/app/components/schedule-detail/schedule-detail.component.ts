@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router"
 import { Schedule } from 'src/app/models/schedule';
 import { ScheduleService } from 'src/app/services/schedule.service';
+// import { Location } from "@angular/common"
 
 @Component({
   selector: 'app-schedule-detail',
@@ -39,7 +40,8 @@ export class ScheduleDetailComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
               private scheduleService: ScheduleService,
-              private location: Location) { }
+              
+              ) { }
 
   ngOnInit(): void {
     this.getSchedule()
