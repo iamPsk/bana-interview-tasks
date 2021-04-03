@@ -20,7 +20,7 @@ const routes: Routes = [
     component: SchedulesComponent
   },
   {
-    path: "route/:name",
+    path: "route/:id",
     component: ScheduleDetailComponent
   },
   {

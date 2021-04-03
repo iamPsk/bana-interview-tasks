@@ -18,6 +18,7 @@ export class SchedulesComponent implements OnInit {
    }
 
   ngOnInit(): void {
+      console.log(this.schedules)
   }
 
 }

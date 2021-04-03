@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from "@angular/router"
+import { Schedule } from 'src/app/models/schedule';
+import { ScheduleService } from 'src/app/services/schedule.service';
 
 @Component({
   selector: 'app-schedule-detail',
@@ -7,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScheduleDetailComponent implements OnInit {
   
+  schedule: Schedule;
+
   elements: any = [
     {id: 1, first: 'Mark', last: 'Otto', handle: '@mdo'},
     {id: 2, first: 'Jacob', last: 'Thornton', handle: '@fat'},
@@ -32,9 +37,20 @@ export class ScheduleDetailComponent implements OnInit {
     { id: 10, name: 'John Maklowicz', age: 36, companyName: 'Mako', country: 'Poland', city: 'Bialystok' },
   ];
 
-  constructor() { }
+  constructor(private route: ActivatedRoute,
+              private scheduleService: ScheduleService,
+              private location: Location) { }
 
   ngOnInit(): void {
+    this.getSchedule()
+    
+  }
+
+  getSchedule():void{
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.scheduleService.getSchedule(id)
+    console.log(this.schedule);
+
   }
 
   updateList(id: number, property: string, event: any) {
