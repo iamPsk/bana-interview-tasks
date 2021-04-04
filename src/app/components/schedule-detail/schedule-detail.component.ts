@@ -21,13 +21,10 @@ export class ScheduleDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.getSchedule()
-    this.scheduleService.readSchedule(1)
   }
 
   getSchedule():void{
     const id = +this.route.snapshot.paramMap.get('id');
-    this.scheduleService.getSchedules().subscribe( schedules => {
-      this.schedule = schedules.find( schedule => schedule.id === id)
-    })
+    this.scheduleService.readSchedule(id).subscribe( schedule => this.schedule = schedule)
   }
 }

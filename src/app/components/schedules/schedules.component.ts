@@ -12,13 +12,13 @@ export class SchedulesComponent implements OnInit {
   schedules: Schedule[];
 
   constructor(private scheduleService: ScheduleService) {
+
+  }
+
+  ngOnInit(): void {
     this.scheduleService.getSchedules().subscribe((schedules) => {
       this.schedules = schedules
     })
-   }
-
-  ngOnInit(): void {
-      console.log(this.schedules)
   }
 
 }
